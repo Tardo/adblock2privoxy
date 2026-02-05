@@ -26,3 +26,7 @@ TAG:^ab2p-unblock-s$
 #{ +prevent-compression }
 #.yahoo.com
 #.amazon.com
+
+# Disable CSS injection in javascript files
+{ -filter{ab2p-elemhide-filter} }
+/.*\.(js|json|mjs|cjs)
